@@ -27,14 +27,6 @@ tags:
 
 https://ceh.cagy.org/ 
 
- 
-
- 
-
-https://tryhackme.com/games/koth/join/d80d7c8fe47bd9d72eac99ef 
-
- 
-
 ### 7z2john 
 Necesita compilar esta librería https://www.cpan.org/modules/by-module/Compress/Compress-Raw-Lzma-2.074.tar.gz 
 
