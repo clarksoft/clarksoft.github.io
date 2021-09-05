@@ -7,9 +7,9 @@ main:
     url: /categories/
   - title: "Etiquetas"
     url: /tags/
-  - title: "Vídeos"
-    url: /videos/
+  - title: "WriteUps"
+    url: https://tryhackiando.github.io/
   - title: "Buscador"
     url: /buscador/
-  - title: "Contacto"
+  - title: "Whoami"
     url: /about/

@@ -2,7 +2,7 @@
 layout: single
 title: Qué steganocracker es el más rápido
 excerpt: "Test de velocidad a steganocrackers (y descubrimos el más rápido)"
-date: 2018-04-21
+date: 2021-04-21
 classes: wide
 header:
   teaser: https://tecnoinformatic.com/wp-content/uploads/2020/09/que-es-un-cracker-1.jpg
