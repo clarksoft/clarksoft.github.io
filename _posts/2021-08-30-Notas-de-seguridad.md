@@ -5,7 +5,7 @@ excerpt: "Listado de herramientas útiles en seguridad y unos ejemplos que ayuda
 date: 2018-02-07
 classes: wide
 header:
-  teaser: /assets/images/eWPTxv2/eWPTxv2.png
+  teaser: https://hakin9.org/wp-content/uploads/2017/09/CEH.png
   teaser_home_page: true
 categories:
   - Ethical Hacking
@@ -19,12 +19,12 @@ tags:
 ---
 
 <p align="center">
-<img src="/assets/images/eWPTxv2/eWPTxv2.jpeg">
+<img src="https://hakin9.org/wp-content/uploads/2017/09/CEH.png">
 </p>
 
 
 ## Preparación para examen CEH
-<https://ceh.cagy.org/ >
+<https://ceh.cagy.org/>
 
 ### 7z2john 
 Extrae el hash de cifrado de password de un 7zip para romperlo con john
