@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Clarksoft"
   avatar           : "/assets/images/avatar.png"
-  bio              : "Investigador de seguridad | Hacker de la capa 189"
+  bio              : "Investigador de seguridad | Hacker de capa189"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
