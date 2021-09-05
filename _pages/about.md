@@ -7,9 +7,16 @@ date: 2020-01-29
 
 Mi nombre es Jair Palma (aka **Clarksoft**). Entusiasta de Ciberseguridad.
 
+## Certificaciones
 Estas son las certificaciones que actualmente dispongo:
 
 - CCH ()
+
+## Certificados
+
+- Ver en Linkedin, en licencias y certificaciones (https://www.linkedin.com/in/jairpalmavicenty/)
+- Ver en Credly (https://www.credly.com/users/jair-palma)
+![alt BagdeTHM](https://tryhackme.com/badge/15031 "TryHackme")
 
 
 ## Material de apoyo
@@ -37,7 +44,7 @@ Estos son los exploits que hasta la fecha de hoy tengo registrados:
 - Charla: OSINT en Vtuber Security Conference [Ver charla](https://www.youtube.com/watch?v=ZigRyc0ndME&t=5349s)
 - Taller: Ciberseguridad con Tryhackme [Ver Taller](próximamente)
 
-# Herramientas
+## Herramientas
 Creador de las siguientes herramientas:
 
 - [attackbox_script](https://github.com/clarksoft/attackbox_script) (Mejora eficiencia en rutas y aplicaciones necesarias para hacer un buen pentesting en la máquina de entrenamiento de Tryhackme.)
@@ -56,3 +63,4 @@ Asistente en los siguientes eventos de ciberseguridad:
 - Administrador y creador del servidor de Discord **Tryhackiando** (Más de 100 miembros) ([Enlace](https://discord.org/vApWjFz))
 - Administrador del canal de Telegram **Tryhackiando** (Más de 150 miembros) (Contactarme para solicitar acceso, dado que es restringido)
 
+![alt BagdeTHM](https://tryhackme.com/badge/15031 "TryHackme")
