@@ -13,10 +13,13 @@ Estas son las certificaciones que actualmente dispongo:
 - CCH ()
 
 ## Certificados
+Estos son los certificados de cursos atendidos.
 
-- Ver en Linkedin, en licencias y certificaciones (https://www.linkedin.com/in/jairpalmavicenty/)
-- Ver en Credly (https://www.credly.com/users/jair-palma)
-![alt BagdeTHM](https://tryhackme.com/badge/15031 "TryHackme")
+- [Ver en Linkedin, en licencias y certificaciones](https://www.linkedin.com/in/jairpalmavicenty/)
+- [Ver en Credly](https://www.credly.com/users/jair-palma)
+
+![Badge de THM](https://tryhackme-badges.s3.amazonaws.com/clarksoft.png "TryHackme")
+
 
 
 ## Material de apoyo
@@ -63,4 +66,3 @@ Asistente en los siguientes eventos de ciberseguridad:
 - Administrador y creador del servidor de Discord **Tryhackiando** (Más de 100 miembros) ([Enlace](https://discord.org/vApWjFz))
 - Administrador del canal de Telegram **Tryhackiando** (Más de 150 miembros) (Contactarme para solicitar acceso, dado que es restringido)
 
-![alt BagdeTHM](https://tryhackme.com/badge/15031 "TryHackme")
