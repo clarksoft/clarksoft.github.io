@@ -5,7 +5,7 @@ permalink: /about/
 date: 2020-01-29
 ---
 
-![Jair ><](/assets/images/avatar.png)
+![Jair](/assets/images/avatar.png#center =250x)
 
 Mi nombre es Jair Palma (aka **Clarksoft**). Entusiasta de Ciberseguridad.
 Miembro de la comunidad [OpenHack Chile](www.openhack.cl), que se dedica a la divulgación de la seguridad en palabras simples y en la preparación de CTF para entrenamiento de ciberseguridad.
