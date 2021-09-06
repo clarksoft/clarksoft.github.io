@@ -7,7 +7,7 @@ date: 2020-01-29
 
 
 <p align="center">
-<img src="/assets/images/avatar.png" size=250>
+<img src="/assets/images/avatar.png" width="200">
 </p>
 
 Mi nombre es Jair Palma (aka **Clarksoft**). Entusiasta de Ciberseguridad.
