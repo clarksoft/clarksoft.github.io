@@ -10,7 +10,7 @@ Mi nombre es Jair Palma (aka **Clarksoft**). Entusiasta de Ciberseguridad.
 ## Certificaciones
 Estas son las certificaciones que actualmente dispongo:
 
-- CCH ()
+- CEH (Certified Ethical Hacker)
 
 ## Certificados
 Estos son los certificados de cursos atendidos.
@@ -36,7 +36,7 @@ Estos son los CVE's que hasta la fecha de hoy tengo registrados:
 ## Exploits
 Estos son los exploits que hasta la fecha de hoy tengo registrados:
 
-- [AirDroid 4.2.1.6 - Denial of Service](https://www.exploit-db.com/exploits/46337)
+- [XXXX](https://www.exploit-db.com/exploits/cxxxx)
 
 ## Experiencia
 - Contribuidor de inteligencia de amenaza al CSIRT del gobierno de Chile ([Enlace](https://www.csirt.gob.cl))
@@ -46,6 +46,14 @@ Estos son los exploits que hasta la fecha de hoy tengo registrados:
 - Charla: Aprendiendo ciberseguridad con Tryhackme [Ver charla](https://www.youtube.com/watch?v=z4VfCBygxng)
 - Charla: OSINT en Vtuber Security Conference [Ver charla](https://www.youtube.com/watch?v=ZigRyc0ndME&t=5349s)
 - Taller: Ciberseguridad con Tryhackme [Ver Taller](próximamente)
+
+## Artículos publicados en otros sitios
+- Diario VillaAlemana: Redes públicas Wi-Fi y sus riesgos. [Ver Enlace](https://comunaldevillaalemana.cl/redes-publicas-wi-fi-y-sus-riesgos/)
+- Diario VIllaAlemana: Clases online y ciberseguridad. [Ver Enlace](https://comunaldevillaalemana.cl/clases-online-y-ciberseguridad/)
+- OpenHack: Tendencia en Twitch que deberías conocer. [Ver Enlace](https://openhack.cl/tendencias-en-twitch-que-necesitas-conocer/)
+- LinkedIn: Riesgo de Malware en clases online. [Ver Enlace](https://www.linkedin.com/pulse/riesgo-de-malware-en-clases-online-jair-palma-vicenty/)
+- LinkedIn: Cómo usar tu teléfono de webcam. [Ver Enlace](https://www.linkedin.com/pulse/c%C3%B3mo-usar-un-tel%C3%A9fono-m%C3%B3vil-como-webcam-para-zoom-o-palma-vicenty/)
+
 
 ## Herramientas
 Creador de las siguientes herramientas:
