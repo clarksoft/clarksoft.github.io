@@ -6,11 +6,13 @@ date: 2020-01-29
 ---
 
 
+
 <p align="center">
 <img src="/assets/images/avatar.png" width="200">
 </p>
 
 Mi nombre es Jair Palma (aka **Clarksoft**). Entusiasta de Ciberseguridad.
+
 Miembro de la comunidad [OpenHack Chile](www.openhack.cl), que se dedica a la divulgación de la seguridad en palabras simples y en la preparación de CTF para entrenamiento de ciberseguridad.
 
 ## Certificaciones
@@ -45,6 +47,7 @@ Estos son los exploits que hasta la fecha de hoy tengo registrados:
 - [XXXX](https://www.exploit-db.com/exploits/cxxxx)
 
 ## Experiencia
+
 - Contribuidor de inteligencia de amenaza al CSIRT del gobierno de Chile ([Enlace](https://www.csirt.gob.cl))
 
 ## Apariciones
@@ -54,6 +57,7 @@ Estos son los exploits que hasta la fecha de hoy tengo registrados:
 - Taller: Ciberseguridad con Tryhackme [Ver Taller](próximamente)
 
 ## Artículos publicados en otros sitios
+
 - Diario VillaAlemana: Redes públicas Wi-Fi y sus riesgos. [Ver Enlace](https://comunaldevillaalemana.cl/redes-publicas-wi-fi-y-sus-riesgos/)
 - Diario VIllaAlemana: Clases online y ciberseguridad. [Ver Enlace](https://comunaldevillaalemana.cl/clases-online-y-ciberseguridad/)
 - OpenHack: Tendencia en Twitch que deberías conocer. [Ver Enlace](https://openhack.cl/tendencias-en-twitch-que-necesitas-conocer/)
@@ -62,11 +66,19 @@ Estos son los exploits que hasta la fecha de hoy tengo registrados:
 
 
 ## Herramientas
-Creador de las siguientes herramientas:
+Estas son las herramientas que he compartido a la comunidad:
 
 - [attackbox_script](https://github.com/clarksoft/attackbox_script) (Mejora eficiencia en rutas y aplicaciones necesarias para hacer un buen pentesting en la máquina de entrenamiento de Tryhackme.)
 - [Supercracker](https://github.com/clarksoft/supercracker.sh) (Script creado en bash para romper 2000 contraseñas de zip anidadas una dentro de otra.)
 - [Pdf2IoC](https://github.com/clarksoft/pdf2IoC) (Herramienta que estrae todas las IP que puedan estar en un pdf. Ideal para automatizar extracción de indicadores de compromiso de reportes públicos)
+
+## Salas Creadas en Tryhackme
+Esta son salas que confeccioné para diferentes objetivos dentro de la plataforma de [tryhackme](https://tryhackme.com). Para ingresar es necesaria tener cuenta creada.
+
+- [CTF Lockdown2021](https://tryhackme.com/jr/lockdown0x01ztp)
+- [Sala de evaluación de conocimientos básicos](https://tryhackme.com/jr/reconahacker)
+- [Introducción a seguridad para niños.](https://tryhackme.com/jr/10claves)
+
 
 ## Asistencias
 Asistente en los siguientes eventos de ciberseguridad:
