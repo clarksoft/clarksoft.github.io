@@ -8,7 +8,6 @@ date: 2020-01-29
 
 
 <p align="center">
-<script src="https://tryhackme.com/badge/15031"></script><br>
 <img src="/assets/images/avatar.png" width="200">
 </p>
 
@@ -26,8 +25,10 @@ Estos son los certificados de cursos atendidos.
 
 - [Ver en Linkedin, en licencias y certificaciones](https://www.linkedin.com/in/jairpalmavicenty/)
 - [Ver en Credly](https://www.credly.com/users/jair-palma)
-
-![Badge de THM](https://tryhackme-badges.s3.amazonaws.com/clarksoft.png "TryHackme")
+- Badge dinámico de Tryhackme
+<p>
+<script src="https://tryhackme.com/badge/15031"></script><br>
+</p>
 
 
 
