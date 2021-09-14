@@ -8,6 +8,7 @@ date: 2020-01-29
 
 
 <p align="center">
+<script src="https://tryhackme.com/badge/15031"></script><br>
 <img src="/assets/images/avatar.png" width="200">
 </p>
 
