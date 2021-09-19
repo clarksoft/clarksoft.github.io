@@ -33,7 +33,7 @@ Este curso no tiene valor de inscripción, aunque se solicita que los alumnos se
 
 Al finalizar el curso, se hará un exámen que certificará la participación activa, otorgando al estudiante un Badge almacenado en Credly, que podrá compartir en sus redes sociales.
 
-El formulario de inscripción aún no está disponible, pero actualizaré este post en tanto tenga novedades.
+El formulario de inscripción ya está disponible el este (link)[https://forms.gle/HgjZoQfG13SKqf7H6]
 
 Por un poco más de detalles pueden visitar el sitio oficial del [Diplomado de seguridad](https://diplomadociberseguridad.com/fundamentos-de-ethical-hacking/)
 
