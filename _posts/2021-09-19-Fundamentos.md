@@ -22,7 +22,7 @@ tags:
 ## Fundamentos de Ethical Hacking
 
 El área de CAPACITACIÓN USACH de la UNIVERSIDAD DE SANTIAGO DE CHILE ha tenido la amabilidad de invitarme a impartir un curso sobre Ethical Hacking.
-Mi fortaleza es mi experiencia en el área y cuánto me he dedicado al estudio por medio de la plataforma Tryhackme[https://tryhackme.com], así que el en este curso seré vuestro guía para aprender los fundamentos del hacking ético enfocándolo en comenzar en el mundo profesional de la seguridad de la información.
+Mi fortaleza es mi experiencia en el área y cuánto me he dedicado al estudio por medio de la plataforma [Tryhackme](https://tryhackme.com), así que el en este curso seré vuestro guía para aprender los fundamentos del hacking ético enfocándolo en comenzar en el mundo profesional de la seguridad de la información.
 
 La estructura del curso está conformado de 4 sesiones que irán intenso dedicados principalmente en aprender mientras se practica.
 Explicaremos las bases del ethical hacking desde sus bases. Pasando desde curl, nmap etc. hasta comprometer un servidor de active directory.
@@ -35,7 +35,7 @@ Al finalizar el curso, se hará un exámen que certificará la participación ac
 
 El formulario de inscripción aún no está disponible, pero actualizaré este post en tanto tenga novedades.
 
-Por un poco más de detalles pueden visitar el sitio oficial del (Diplomado de seguridad)[https://diplomadociberseguridad.com/fundamentos-de-ethical-hacking/]
+Por un poco más de detalles pueden visitar el sitio oficial del [Diplomado de seguridad](https://diplomadociberseguridad.com/fundamentos-de-ethical-hacking/)
 
 Nos vemos.
 
