@@ -97,7 +97,7 @@ El antivirus de su computadora estaba teniendo una pelea con un malware que inte
 deshabilitarlo mientras el AV intentaba eliminar el archivo comprometido.
 
 El mensaje de malware apuntaba a un crypto.MTB, por lo que lo desconecté de la red
-para seguir la revisión. Le comenté a Gise que podíamos estar frente a un ransomware.
+para seguir la revisión. Le comenté que podíamos estar frente a un ransomware.
 
 Nota Importante: windows 10 estaba actualizado al día tanto de parches críticos como de
 definiciones de antivirus.
@@ -144,7 +144,7 @@ Programamos una revisión de antivirus full para el Nas, por si el malware dejó
 sorpresa allí.
 
 ## Genshin Impact
-Lo único que le preocupaba a Gise era que no le hayan intervenido su Cuenta de Genshin
+Lo único que le preocupaba a mi familiar era que no le hayan intervenido su Cuenta de Genshin
 Impact, que es un juego al que le ha dedicado muchísimo tiempo.
 
 Tristemente las noticias no fueron buenas. Al momento de loguearse desde su table, el
@@ -182,7 +182,7 @@ El cambio de contraseñas duró hasta las 01:AM
 
 8:50AM del siguiente día una respuesta a un mensaje en telegram alerta nuevamente.
 
-Al revisar los mensajes, desde la cuenta de gise se habían enviado unos 20 mensajes de
+Al revisar los mensajes, desde la cuenta se habían enviado unos 20 mensajes de
 spam anti-putin a destinatarios desconocidos pero claramente atingentes al conflicto.
 
 <p>
@@ -243,7 +243,7 @@ hay novedades.
 
 ## Instagram
 
-Esto último gatilló una segunda revisión de las redes sociales por parte de Gisela, descubriendo
+Esto último gatilló una segunda revisión de las redes sociales, descubriendo
 otra sorpresa.
 
 En su Instagram aparecieron cientos de nuevos seguidos, de europa oriental.
