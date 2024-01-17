@@ -25,6 +25,7 @@ Estos son los certificados de cursos atendidos.
 
 - [Ver en Linkedin, en licencias y certificaciones](https://www.linkedin.com/in/jairpalmavicenty/)
 - [Ver en Credly](https://www.credly.com/users/jair-palma)
+- [Ver en BlueTeam Labs](https://blueteamlabs.online/public/user/e20bb0619542f119b23a72)
 - Badge dinámico de Tryhackme
 <p>
 <script src="https://tryhackme.com/badge/15031"></script><br>
@@ -83,7 +84,7 @@ Esta son salas que confeccioné para diferentes objetivos dentro de la plataform
 
 
 ## Asistencias
-Asistente en los siguientes eventos de ciberseguridad:
+Asistente en los eventos de ciberseguridad:
 
 - Defcon 2017 (Las Vegas)
 - BlackHat 2017 (Las Vegas)
